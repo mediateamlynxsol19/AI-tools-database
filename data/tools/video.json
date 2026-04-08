@@ -1,0 +1,74 @@
+{
+  "_category": "video",
+  "_count": 3,
+  "tools": [
+    {
+      "id": "descript",
+      "name": "Descript",
+      "description": "Edit video and podcast by editing the transcript like a Word doc. AI removes filler words, clones your voice, generates captions, and creates social clips automatically.",
+      "category": "video",
+      "pricing": "Freemium",
+      "link": "https://descript.com",
+      "tags": [
+        "transcript-editing",
+        "filler-word-removal",
+        "captions",
+        "podcast",
+        "clips"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.5,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "opus-clip",
+      "name": "Opus Clip",
+      "description": "AI that turns long videos into viral short clips. Automatically identifies the most engaging moments, adds captions, reframes for vertical format, and scores clip virality.",
+      "category": "video",
+      "pricing": "Freemium",
+      "link": "https://opus.pro",
+      "tags": [
+        "short-clips",
+        "viral",
+        "captions",
+        "repurposing",
+        "vertical-video"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.5,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "runway-ml",
+      "name": "Runway",
+      "description": "Professional AI video generation and editing suite. Gen-3 Alpha model creates cinematic video from text or image prompts with precise motion control and style transfer.",
+      "category": "video",
+      "pricing": "Freemium",
+      "link": "https://runwayml.com",
+      "tags": [
+        "video-generation",
+        "Gen-3",
+        "motion-control",
+        "style-transfer"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.6,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

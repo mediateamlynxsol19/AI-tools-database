@@ -1,0 +1,98 @@
+{
+  "_category": "productivity",
+  "_count": 4,
+  "tools": [
+    {
+      "id": "granola-ai",
+      "name": "Granola",
+      "description": "AI notepad for meetings that runs locally on Mac. Captures your rough notes and enhances them with AI-generated structure and summaries without recording anyone.",
+      "category": "productivity",
+      "pricing": "Freemium",
+      "link": "https://granola.ai",
+      "tags": [
+        "meeting-notes",
+        "local",
+        "Mac",
+        "privacy",
+        "enhancement"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": true,
+      "rating": 4.4,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "notion-ai",
+      "name": "Notion AI",
+      "description": "AI built into Notion workspaces. Summarizes pages, writes first drafts, extracts action items from meeting notes, translates content, and answers questions about your workspace.",
+      "category": "productivity",
+      "pricing": "Freemium",
+      "link": "https://notion.so",
+      "tags": [
+        "workspace",
+        "summarization",
+        "drafting",
+        "meeting-notes",
+        "translation"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.5,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "otter-ai",
+      "name": "Otter.ai",
+      "description": "AI meeting assistant that transcribes conversations in real time, identifies speakers, generates summaries, captures action items, and syncs with Zoom, Meet, and Teams.",
+      "category": "productivity",
+      "pricing": "Freemium",
+      "link": "https://otter.ai",
+      "tags": [
+        "transcription",
+        "meeting-summary",
+        "action-items",
+        "Zoom",
+        "Teams"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.4,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "reclaim-ai",
+      "name": "Reclaim AI",
+      "description": "AI calendar optimizer that automatically schedules tasks, habits, and buffer times to protect your deep work hours. Syncs with Google Calendar and adapts to schedule changes.",
+      "category": "productivity",
+      "pricing": "Freemium",
+      "link": "https://reclaim.ai",
+      "tags": [
+        "calendar",
+        "scheduling",
+        "deep-work",
+        "habits",
+        "time-blocking"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.3,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

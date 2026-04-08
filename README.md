@@ -8,7 +8,7 @@ A community-driven, open-source database of AI tools for developers, designers, 
 
 ## 📊 Live Statistics
 
-- **Total Tools**: ![Tools Count](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=totalTools&label=tools&color=blue)
+- **Total Tools**: 43
 - **Categories**: 12
 - **Contributors**: ![Contributors](https://img.shields.io/github/contributors/Durgesh-Vaigandla/ai-tools-database)
 - **Last Updated**: ![Last Commit](https://img.shields.io/github/last-commit/Durgesh-Vaigandla/ai-tools-database/main)
@@ -17,6 +17,9 @@ A community-driven, open-source database of AI tools for developers, designers, 
 
 ### For Users
 Browse the [AI Tools Directory](https://github.com/Durgesh-Vaigandla/ai-tools-database) to discover AI tools.
+
+### Live SEO Landing Page
+Visit the public landing page: [AI Tools Database Website](https://durgesh-vaigandla.github.io/ai-tools-database/)
 
 ### For Contributors
 1. **Fork** this repository
@@ -45,6 +48,13 @@ ai-tools-database/
 │   ├── aggregate.js        # Data aggregation script
 │   ├── test.js             # Test suite
 │   └── stats.js            # Statistics generation
+├── web/                    # SEO landing page (GitHub Pages)
+│   ├── index.html
+│   ├── script.js
+│   ├── stats.json
+│   ├── tools.json
+│   ├── robots.txt
+│   └── sitemap.xml
 └── docs/                   # Documentation
 ```
 
@@ -83,18 +93,18 @@ npm run stats       # Generate database statistics
 
 | Category | Description | Tools Count |
 |----------|-------------|-------------|
-| **Development** | Coding assistants, debuggers, deployment tools | ![Dev Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.development&label=tools) |
-| **Design** | UI/UX tools, image generators, prototyping | ![Design Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.design&label=tools) |
-| **Content Creation** | Writing assistants, content generators | ![Content Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.content&label=tools) |
-| **Business** | Business intelligence, analytics, automation | ![Business Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.business&label=tools) |
-| **Productivity** | Task management, workflow optimization | ![Productivity Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.productivity&label=tools) |
-| **Research** | Academic research, data analysis | ![Research Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.research&label=tools) |
-| **Marketing** | Social media, SEO, advertising tools | ![Marketing Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.marketing&label=tools) |
-| **Education** | Learning platforms, tutoring systems | ![Education Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.education&label=tools) |
-| **Audio** | Music generation, audio editing | ![Audio Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.audio&label=tools) |
-| **Video** | Video editing, generation, animation | ![Video Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.video&label=tools) |
-| **Data Science** | Data analysis, ML, visualization | ![Data Science Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.data-science&label=tools) |
-| **Automation** | Workflow automation, API integration | ![Automation Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.automation&label=tools) |
+| **Development** | Coding assistants, debuggers, deployment tools, and development productivity tools | 3 |
+| **Design** | UI/UX design tools, image generators, prototyping, and creative design assistants | 3 |
+| **Content Creation** | Writing assistants, content generators, copywriting tools, and creative writing aids | 3 |
+| **Business** | Business intelligence, analytics, automation, and enterprise productivity tools | 5 |
+| **Productivity** | Task management, automation, workflow optimization, and personal productivity tools | 4 |
+| **Research** | Academic research, data analysis, literature review, and research assistance tools | 4 |
+| **Marketing** | Social media management, SEO tools, advertising, and marketing automation | 4 |
+| **Education** | Learning platforms, tutoring systems, educational content creation, and study aids | 4 |
+| **Audio & Music** | Music generation, audio editing, voice synthesis, and sound design tools | 3 |
+| **Video** | Video editing, generation, animation, and multimedia content creation tools | 3 |
+| **Data Science** | Data analysis, machine learning, visualization, and statistical tools | 3 |
+| **Automation** | Workflow automation, API integration, and process optimization tools | 4 |
 
 ## 🤝 Contributing
 
@@ -226,7 +236,7 @@ Share your AI tools database updates on LinkedIn:
 🚀 Just updated our comprehensive AI Tools Database!
 
 📊 Current Stats:
-• 9+ AI tools across 3 categories
+• 43+ AI tools across 12 categories
 • Development, Design, and Content Creation tools
 • All tools verified and categorized
 
@@ -237,7 +247,7 @@ Share your AI tools database updates on LinkedIn:
 
 **Dynamic Badges for Sharing:**
 - Total Tools: ![Tools](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=totalTools&label=AI%20Tools&color=blue)
-- Categories: ![Categories](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=categories.length&label=Categories&color=green)
+- Categories: ![Categories](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/stats.json&query=totalCategories&label=Categories&color=green)
 
 ## 🛡️ Quality Assurance
 

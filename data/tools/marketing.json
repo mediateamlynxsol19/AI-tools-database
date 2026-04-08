@@ -1,0 +1,96 @@
+{
+  "_category": "marketing",
+  "_count": 4,
+  "tools": [
+    {
+      "id": "adcreative-ai",
+      "name": "AdCreative.ai",
+      "description": "Generates high-converting ad creatives for Facebook, Google, and Instagram. Trained on performance data from millions of ads to maximize click-through and conversion rates.",
+      "category": "marketing",
+      "pricing": "Paid",
+      "link": "https://adcreative.ai",
+      "tags": [
+        "ad-creatives",
+        "Facebook-ads",
+        "Google-ads",
+        "conversion",
+        "performance"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.2,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "brand24",
+      "name": "Brand24",
+      "description": "AI-powered social listening and brand monitoring. Tracks brand mentions across the web and social media, analyzes sentiment, and alerts you to reputation-impacting conversations.",
+      "category": "marketing",
+      "pricing": "Paid",
+      "link": "https://brand24.com",
+      "tags": [
+        "social-listening",
+        "brand-monitoring",
+        "sentiment-analysis",
+        "reputation"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.3,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "predis-ai",
+      "name": "Predis.ai",
+      "description": "AI social media content creator. Generates posts, carousels, reels scripts, and ad copy from a single product description. Includes a competitor analysis and content calendar.",
+      "category": "marketing",
+      "pricing": "Freemium",
+      "link": "https://predis.ai",
+      "tags": [
+        "social-media",
+        "carousel",
+        "reels",
+        "content-calendar",
+        "competitor-analysis"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.2,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "surfer-seo",
+      "name": "Surfer SEO",
+      "description": "AI content editor that scores your article in real time against the top-ranking pages and gives exact keyword and structure recommendations to rank on page one.",
+      "category": "marketing",
+      "pricing": "Paid",
+      "link": "https://surferseo.com",
+      "tags": [
+        "SEO",
+        "content-optimization",
+        "SERP",
+        "keyword-density"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.5,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

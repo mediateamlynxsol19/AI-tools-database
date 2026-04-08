@@ -1,0 +1,74 @@
+{
+  "_category": "data-science",
+  "_count": 3,
+  "tools": [
+    {
+      "id": "akkio",
+      "name": "Akkio",
+      "description": "No-code AI platform for business analysts. Build predictive models, churn forecasts, and lead scoring models from your data without writing any machine learning code.",
+      "category": "data-science",
+      "pricing": "Paid",
+      "link": "https://akkio.com",
+      "tags": [
+        "no-code",
+        "predictive-models",
+        "forecasting",
+        "lead-scoring"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.2,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "datarobot",
+      "name": "DataRobot",
+      "description": "Enterprise AI platform for building, deploying, and monitoring machine learning models at scale. Automates the full ML lifecycle from feature engineering to production monitoring.",
+      "category": "data-science",
+      "pricing": "Paid",
+      "link": "https://datarobot.com",
+      "tags": [
+        "enterprise-ML",
+        "AutoML",
+        "MLOps",
+        "model-monitoring",
+        "deployment"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.3,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "julius-ai",
+      "name": "Julius AI",
+      "description": "Conversational AI data analyst. Upload CSV, Excel, or connect a database and ask questions in plain English to get charts, statistical analysis, and business insights instantly.",
+      "category": "data-science",
+      "pricing": "Freemium",
+      "link": "https://julius.ai",
+      "tags": [
+        "data-analysis",
+        "CSV",
+        "charts",
+        "statistics",
+        "natural-language"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.4,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

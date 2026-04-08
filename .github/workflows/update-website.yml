@@ -1,0 +1,72 @@
+name: Update Website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**/*.json'
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  update-website:
+    runs-on: ubuntu-latest
+    if: ${{ secrets.WEBSITE_UPDATE_TOKEN != '' && vars.WEBSITE_REPO != '' }}
+
+    steps:
+      - name: Checkout database repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          path: 'database'
+
+      - name: Checkout website repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.WEBSITE_REPO }}
+          path: 'website'
+          token: ${{ secrets.WEBSITE_UPDATE_TOKEN }}
+
+      - name: Sync data files into website repo
+        run: |
+          set -euo pipefail
+          TARGET_PATH="${{ vars.WEBSITE_DATA_PATH }}"
+          if [ -z "$TARGET_PATH" ]; then
+            TARGET_PATH="AI-tools-database/data"
+          fi
+
+          mkdir -p "website/$TARGET_PATH"
+          rsync -av --delete database/data/ "website/$TARGET_PATH/"
+
+      - name: Install website dependencies
+        working-directory: website
+        run: |
+          npm install
+
+      - name: Build website
+        working-directory: website
+        run: npm run build
+
+      - name: Create sync pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.WEBSITE_UPDATE_TOKEN }}
+          path: website
+          commit-message: "chore(data): sync AI tools database"
+          branch: "chore/sync-ai-tools-database"
+          title: "Sync AI tools database updates"
+          body: |
+            Automated sync from ${{ github.repository }}.
+
+            Source commit: ${{ github.sha }}
+          labels: |
+            automated
+            data-sync
+
+  missing-config:
+    runs-on: ubuntu-latest
+    if: ${{ secrets.WEBSITE_UPDATE_TOKEN == '' || vars.WEBSITE_REPO == '' }}
+    steps:
+      - name: Missing website sync configuration
+        run: |
+          echo "Skipping website sync. Set WEBSITE_UPDATE_TOKEN secret and WEBSITE_REPO variable to enable this workflow."

@@ -1,5 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const {
+  readCategoryData,
+  readCategoryTools,
+  writeCategoryTools
+} = require('./utils/category-tools');
+const { updateReadmeStats, updateWebStats } = require('./utils/readme-stats');
 
 function formatJSONFiles() {
   const toolsDir = path.join(__dirname, '../data/tools');
@@ -17,13 +23,14 @@ function formatJSONFiles() {
 
     if (fs.existsSync(filePath)) {
       try {
-        const tools = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const parsedData = readCategoryData(filePath);
+        const tools = readCategoryTools(filePath);
 
         // Sort tools by name
         tools.sort((a, b) => a.name.localeCompare(b.name));
 
-        // Format and write back
-        fs.writeFileSync(filePath, JSON.stringify(tools, null, 2));
+        // Preserve source shape while writing sorted tools
+        writeCategoryTools(filePath, parsedData, tools);
 
         totalFiles++;
         totalTools += tools.length;
@@ -64,6 +71,7 @@ function generateStats() {
   const stats = {
     lastUpdated: new Date().toISOString(),
     totalTools: 0,
+    totalCategories: 0,
     categories: {},
     featured: 0,
     popular: 0,
@@ -85,7 +93,7 @@ function generateStats() {
       const filePath = path.join(toolsDir, file);
 
       try {
-        const tools = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const tools = readCategoryTools(filePath);
         stats.categories[category] = tools.length;
         stats.totalTools += tools.length;
 
@@ -103,8 +111,12 @@ function generateStats() {
     });
   }
 
+  stats.totalCategories = Object.keys(stats.categories).length;
+
   const statsPath = path.join(__dirname, '../data/stats.json');
   fs.writeFileSync(statsPath, JSON.stringify(stats, null, 2));
+  updateReadmeStats(stats);
+  updateWebStats(stats);
 
   console.log('📊 Stats generated:', stats);
   return stats;

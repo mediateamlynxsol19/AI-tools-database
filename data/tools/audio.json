@@ -1,0 +1,74 @@
+{
+  "_category": "audio",
+  "_count": 3,
+  "tools": [
+    {
+      "id": "adobe-podcast-ai",
+      "name": "Adobe Podcast AI",
+      "description": "AI audio enhancement tool that removes background noise and makes any microphone sound studio-quality in one click. Free and runs entirely in the browser.",
+      "category": "audio",
+      "pricing": "Free",
+      "link": "https://podcast.adobe.com",
+      "tags": [
+        "noise-removal",
+        "audio-enhancement",
+        "podcast",
+        "microphone",
+        "free"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.7,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "description": "Best-in-class AI voice synthesis and cloning. Generates natural-sounding speech in 32 languages and clones any voice from a short audio sample for dubbing and voiceovers.",
+      "category": "audio",
+      "pricing": "Freemium",
+      "link": "https://elevenlabs.io",
+      "tags": [
+        "voice-synthesis",
+        "cloning",
+        "dubbing",
+        "multilingual",
+        "TTS"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.8,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "suno-ai",
+      "name": "Suno",
+      "description": "AI music generator that creates full songs complete with vocals, instruments, and production from a simple text prompt. Generate entire tracks in any genre in seconds.",
+      "category": "audio",
+      "pricing": "Freemium",
+      "link": "https://suno.com",
+      "tags": [
+        "music-generation",
+        "vocals",
+        "any-genre",
+        "full-songs"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.6,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

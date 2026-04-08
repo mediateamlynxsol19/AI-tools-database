@@ -1,0 +1,95 @@
+{
+  "_category": "automation",
+  "_count": 4,
+  "tools": [
+    {
+      "id": "bardeen-ai",
+      "name": "Bardeen",
+      "description": "AI browser automation tool that records and runs workflows across web apps without any code. Automates repetitive research, data entry, and outreach tasks in Chrome.",
+      "category": "automation",
+      "pricing": "Freemium",
+      "link": "https://bardeen.ai",
+      "tags": [
+        "browser-automation",
+        "no-code",
+        "Chrome",
+        "scraping",
+        "outreach"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.2,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "make-com",
+      "name": "Make",
+      "description": "Visual automation platform more powerful than Zapier for complex workflows. Supports branching logic, error handling, and AI modules for intelligent process automation.",
+      "category": "automation",
+      "pricing": "Freemium",
+      "link": "https://make.com",
+      "tags": [
+        "visual-automation",
+        "branching-logic",
+        "complex-workflows",
+        "integrations"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.4,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "n8n-io",
+      "name": "n8n",
+      "description": "Open-source workflow automation with self-hosting option. Features AI agent nodes powered by LLMs, allowing intelligent decision-making inside automated workflows.",
+      "category": "automation",
+      "pricing": "Freemium",
+      "link": "https://n8n.io",
+      "tags": [
+        "open-source",
+        "self-hosted",
+        "AI-agents",
+        "LLM-nodes"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.6,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "zapier-ai",
+      "name": "Zapier AI",
+      "description": "AI-enhanced workflow automation platform connecting 6000+ apps. Build multi-step Zaps using natural language, add AI actions, and automate entire business processes.",
+      "category": "automation",
+      "pricing": "Freemium",
+      "link": "https://zapier.com",
+      "tags": [
+        "workflow",
+        "no-code",
+        "integrations",
+        "6000-apps"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.5,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

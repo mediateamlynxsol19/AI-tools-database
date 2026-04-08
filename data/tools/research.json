@@ -1,0 +1,95 @@
+{
+  "_category": "research",
+  "_count": 4,
+  "tools": [
+    {
+      "id": "consensus-app",
+      "name": "Consensus",
+      "description": "AI search engine for peer-reviewed scientific research. Find consensus across studies, get evidence-based answers, and understand what the science actually says.",
+      "category": "research",
+      "pricing": "Freemium",
+      "link": "https://consensus.app",
+      "tags": [
+        "science",
+        "peer-reviewed",
+        "evidence-based",
+        "health",
+        "academic"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.3,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "elicit-ai",
+      "name": "Elicit",
+      "description": "AI research assistant for academic literature. Searches millions of papers, extracts key data into structured tables, and summarizes findings across multiple studies.",
+      "category": "research",
+      "pricing": "Freemium",
+      "link": "https://elicit.com",
+      "tags": [
+        "academic",
+        "papers",
+        "literature-review",
+        "data-extraction"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": false,
+      "rating": 4.4,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "description": "Google's AI research assistant. Upload any documents and hold deep conversations with your sources. Generates grounded summaries and audio podcast overviews.",
+      "category": "research",
+      "pricing": "Free",
+      "link": "https://notebooklm.google.com",
+      "tags": [
+        "document-analysis",
+        "Google",
+        "audio-overview",
+        "grounded-answers"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.7,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "perplexity-ai",
+      "name": "Perplexity AI",
+      "description": "AI-powered search engine that delivers cited, real-time answers by searching the web. Ideal for research, fact-checking, and exploring topics without ad-driven bias.",
+      "category": "research",
+      "pricing": "Freemium",
+      "link": "https://perplexity.ai",
+      "tags": [
+        "search",
+        "citations",
+        "real-time",
+        "fact-checking"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.7,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

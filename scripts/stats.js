@@ -1,7 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const { readCategoryTools } = require('./utils/category-tools');
+const { updateReadmeStats, updateWebStats } = require('./utils/readme-stats');
+const { aggregateTools } = require('./aggregate');
 
 function generateStats() {
+  // Keep the aggregated API payload in sync when stats are regenerated.
+  aggregateTools();
+
   const toolsDir = path.join(__dirname, '../data/tools');
   const statsFile = path.join(__dirname, '../data/stats.json');
 
@@ -24,7 +30,7 @@ function generateStats() {
     const filePath = path.join(toolsDir, file);
 
     try {
-      const tools = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      const tools = readCategoryTools(filePath);
       const categoryCount = tools.length;
       categories[category] = categoryCount;
       totalTools += categoryCount;
@@ -52,6 +58,7 @@ function generateStats() {
   const stats = {
     lastUpdated: new Date().toISOString(),
     totalTools,
+    totalCategories: Object.keys(categories).length,
     categories,
     featured,
     popular,
@@ -61,8 +68,10 @@ function generateStats() {
 
   // Write stats to file
   fs.writeFileSync(statsFile, JSON.stringify(stats, null, 2));
+  updateReadmeStats(stats);
+  updateWebStats(stats);
   console.log(`\n✅ Stats updated: ${totalTools} total tools`);
-  console.log(`   Categories: ${Object.keys(categories).length}`);
+  console.log(`   Categories: ${stats.totalCategories}`);
   console.log(`   Featured: ${featured}, Popular: ${popular}, New: ${newTools}`);
   console.log(`   Pricing types: ${Object.keys(pricing).join(', ')}`);
 

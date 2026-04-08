@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { readCategoryTools } = require('./utils/category-tools');
 
 function runTests() {
   console.log('🧪 Running AI Tools Database Tests...\n');
@@ -92,7 +93,7 @@ function testSampleData() {
 
   // Test at least one file
   const sampleFile = path.join(toolsDir, files[0]);
-  const tools = JSON.parse(fs.readFileSync(sampleFile, 'utf8'));
+  const tools = readCategoryTools(sampleFile);
 
   return Array.isArray(tools) && tools.length > 0 && tools[0].id && tools[0].name;
 }
@@ -103,7 +104,7 @@ function testDataIntegrity() {
 
   for (const file of files) {
     const filePath = path.join(toolsDir, file);
-    const tools = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const tools = readCategoryTools(filePath);
 
     for (const tool of tools) {
       // Check required fields

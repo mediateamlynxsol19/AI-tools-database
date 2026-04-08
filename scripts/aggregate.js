@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { readCategoryTools } = require('./utils/category-tools');
 
 function aggregateTools() {
   const toolsDir = path.join(__dirname, '../data/tools');
@@ -21,7 +22,7 @@ function aggregateTools() {
     const filePath = path.join(toolsDir, file);
 
     try {
-      const tools = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      const tools = readCategoryTools(filePath);
       console.log(`📂 Processing ${category}.json: ${tools.length} tools`);
 
       // Add category info to each tool

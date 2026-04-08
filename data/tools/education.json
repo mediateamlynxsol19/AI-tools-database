@@ -1,0 +1,98 @@
+{
+  "_category": "education",
+  "_count": 4,
+  "tools": [
+    {
+      "id": "khanmigo",
+      "name": "Khanmigo",
+      "description": "Khan Academy's GPT-4 powered AI tutor. Guides students through problems using the Socratic method without giving direct answers. Covers K-12 math, science, and humanities.",
+      "category": "education",
+      "pricing": "Freemium",
+      "link": "https://khanacademy.org/khan-labs",
+      "tags": [
+        "tutoring",
+        "K-12",
+        "Socratic",
+        "math",
+        "guided-learning"
+      ],
+      "featured": true,
+      "popular": true,
+      "new": false,
+      "rating": 4.6,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "quizlet-ai",
+      "name": "Quizlet AI",
+      "description": "AI study assistant built into Quizlet. Generates flashcard sets from any text, creates practice tests tailored to your weak areas, and explains concepts with adaptive explanations.",
+      "category": "education",
+      "pricing": "Freemium",
+      "link": "https://quizlet.com",
+      "tags": [
+        "flashcards",
+        "study",
+        "adaptive",
+        "practice-tests",
+        "students"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.3,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "socratic-google",
+      "name": "Socratic by Google",
+      "description": "AI homework helper for students. Photograph any question — math equation, science problem, or essay prompt — and get instant step-by-step explanations with visual aids.",
+      "category": "education",
+      "pricing": "Free",
+      "link": "https://socratic.org",
+      "tags": [
+        "homework",
+        "photo-input",
+        "step-by-step",
+        "students",
+        "K-12"
+      ],
+      "featured": false,
+      "popular": true,
+      "new": false,
+      "rating": 4.4,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "synthesis-tutor",
+      "name": "Synthesis",
+      "description": "AI math tutor designed around problem-solving and critical thinking. Adapts difficulty in real time, identifies knowledge gaps, and builds genuine mathematical intuition in kids.",
+      "category": "education",
+      "pricing": "Paid",
+      "link": "https://synthesis.com",
+      "tags": [
+        "math",
+        "adaptive-learning",
+        "critical-thinking",
+        "kids",
+        "personalized"
+      ],
+      "featured": false,
+      "popular": false,
+      "new": true,
+      "rating": 4.5,
+      "submittedBy": "Durgesh-Vaigandla",
+      "submittedAt": "2026-04-08T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z",
+      "verificationStatus": "verified"
+    }
+  ]
+}

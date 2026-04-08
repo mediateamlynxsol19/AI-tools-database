@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const Ajv = require('ajv');
+const { extractToolsFromCategoryData } = require('./utils/category-tools');
 
 const ajv = new Ajv({ allErrors: true, verbose: true });
 const schema = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/schema.json'), 'utf8'));
@@ -23,7 +24,21 @@ function validateTools() {
 
     if (fs.existsSync(filePath)) {
       try {
-        const tools = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const parsedData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const tools = extractToolsFromCategoryData(parsedData);
+
+        if (!tools) {
+          allValid = false;
+          errors.push({
+            category,
+            file: `${category}.json`,
+            type: 'file-format',
+            message: 'Expected either an array of tools or an object with a tools array'
+          });
+          console.error(`❌ Invalid format in ${category}.json: expected an array or { tools: [] }`);
+          return;
+        }
+
         console.log(`📂 Checking ${category}.json (${tools.length} tools)`);
 
         tools.forEach((tool, index) => {
@@ -53,6 +68,12 @@ function validateTools() {
 
       } catch (error) {
         allValid = false;
+        errors.push({
+          category,
+          file: `${category}.json`,
+          type: 'parse-error',
+          message: error.message
+        });
         console.error(`❌ Error parsing ${category}.json:`, error.message);
       }
     }
