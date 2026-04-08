@@ -11,16 +11,29 @@ on:
 jobs:
   update-website:
     runs-on: ubuntu-latest
-    if: ${{ secrets.WEBSITE_UPDATE_TOKEN != '' && vars.WEBSITE_REPO != '' }}
 
     steps:
+      - name: Check sync configuration
+        id: check-config
+        env:
+          WEBSITE_TOKEN: ${{ secrets.WEBSITE_UPDATE_TOKEN }}
+          WEBSITE_REPO: ${{ vars.WEBSITE_REPO }}
+        run: |
+          if [ -n "$WEBSITE_TOKEN" ] && [ -n "$WEBSITE_REPO" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout database repository
+        if: steps.check-config.outputs.enabled == 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ github.repository }}
           path: 'database'
 
       - name: Checkout website repository
+        if: steps.check-config.outputs.enabled == 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.WEBSITE_REPO }}
@@ -28,6 +41,7 @@ jobs:
           token: ${{ secrets.WEBSITE_UPDATE_TOKEN }}
 
       - name: Sync data files into website repo
+        if: steps.check-config.outputs.enabled == 'true'
         run: |
           set -euo pipefail
           TARGET_PATH="${{ vars.WEBSITE_DATA_PATH }}"
@@ -39,15 +53,18 @@ jobs:
           rsync -av --delete database/data/ "website/$TARGET_PATH/"
 
       - name: Install website dependencies
+        if: steps.check-config.outputs.enabled == 'true'
         working-directory: website
         run: |
           npm install
 
       - name: Build website
+        if: steps.check-config.outputs.enabled == 'true'
         working-directory: website
         run: npm run build
 
       - name: Create sync pull request
+        if: steps.check-config.outputs.enabled == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.WEBSITE_UPDATE_TOKEN }}
@@ -63,10 +80,7 @@ jobs:
             automated
             data-sync
 
-  missing-config:
-    runs-on: ubuntu-latest
-    if: ${{ secrets.WEBSITE_UPDATE_TOKEN == '' || vars.WEBSITE_REPO == '' }}
-    steps:
       - name: Missing website sync configuration
+        if: steps.check-config.outputs.enabled != 'true'
         run: |
           echo "Skipping website sync. Set WEBSITE_UPDATE_TOKEN secret and WEBSITE_REPO variable to enable this workflow."
