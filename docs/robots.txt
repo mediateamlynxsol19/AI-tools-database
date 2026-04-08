@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://durgesh-vaigandla.github.io/ai-tools-database/sitemap.xml

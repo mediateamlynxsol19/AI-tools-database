@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Tools Database | Open Source AI Tools API for Developers</title>
+    <meta
+      name="description"
+      content="Developer-first AI tools database with validated JSON data, category stats, and a production-ready open-source API feed."
+    />
+    <meta
+      name="keywords"
+      content="AI tools API, open source AI tools, developer tools dataset, AI directory JSON, curated AI tools"
+    />
+    <meta name="author" content="AI Tools Database Community" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://durgesh-vaigandla.github.io/ai-tools-database/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Tools Database" />
+    <meta property="og:title" content="AI Tools Database | Open Source AI Tools API" />
+    <meta
+      property="og:description"
+      content="Explore vetted AI tools, category stats, and a live JSON feed built for developers."
+    />
+    <meta property="og:url" content="https://durgesh-vaigandla.github.io/ai-tools-database/" />
+    <meta property="og:image" content="https://durgesh-vaigandla.github.io/ai-tools-database/og-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Tools Database | Open Source AI Tools API" />
+    <meta
+      name="twitter:description"
+      content="Use a validated, community-maintained AI tools dataset and API feed."
+    />
+    <meta name="twitter:image" content="https://durgesh-vaigandla.github.io/ai-tools-database/og-image.png" />
+
+    <link rel="sitemap" type="application/xml" href="/ai-tools-database/sitemap.xml" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["'Space Grotesk'", 'ui-sans-serif', 'system-ui']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI Tools Database",
+        "url": "https://durgesh-vaigandla.github.io/ai-tools-database/",
+        "description": "Open-source, community-curated AI tools database.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://github.com/Durgesh-Vaigandla/ai-tools-database",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "AI Tools Database",
+        "description": "Structured and validated AI tools metadata for developers and builders.",
+        "url": "https://github.com/Durgesh-Vaigandla/ai-tools-database",
+        "license": "https://opensource.org/licenses/MIT",
+        "creator": {
+          "@type": "Organization",
+          "name": "AI Tools Database Community"
+        },
+        "distribution": {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/tools.json"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-black antialiased transition-colors duration-200 dark:bg-black dark:text-white">
+    <div class="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(0,0,0,0.06),transparent_45%),radial-gradient(circle_at_75%_0%,rgba(0,0,0,0.05),transparent_35%)] dark:bg-[radial-gradient(circle_at_25%_20%,rgba(255,255,255,0.10),transparent_45%),radial-gradient(circle_at_75%_0%,rgba(255,255,255,0.08),transparent_35%)]"></div>
+
+    <svg aria-hidden="true" class="hidden">
+      <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l2.9 5.88 6.49.94-4.7 4.58 1.11 6.47L12 17.8l-5.8 3.05 1.11-6.47-4.7-4.58 6.49-.94L12 3z"></path>
+      </symbol>
+      <symbol id="icon-pr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="6" cy="5" r="2.5"></circle>
+        <circle cx="18" cy="19" r="2.5"></circle>
+        <circle cx="6" cy="19" r="2.5"></circle>
+        <path d="M6 7.5v9"></path>
+        <path d="M8.5 6.5h4a4 4 0 014 4v6"></path>
+      </symbol>
+      <symbol id="icon-tools" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a4 4 0 01-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-3 3-2-2 3-3z"></path>
+      </symbol>
+      <symbol id="icon-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+        <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path>
+        <path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"></path>
+        <path d="M9.5 12.5l2 2 4-4"></path>
+      </symbol>
+      <symbol id="icon-api" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 8l-4 4 4 4"></path>
+        <path d="M16 8l4 4-4 4"></path>
+        <path d="M14 4l-4 16"></path>
+      </symbol>
+      <symbol id="icon-community" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="9" r="3"></circle>
+        <circle cx="16" cy="9" r="3"></circle>
+        <path d="M2.5 20a5.5 5.5 0 0111 0"></path>
+        <path d="M10.5 20a5.5 5.5 0 0111 0"></path>
+      </symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+        <path d="M5 15V5a2 2 0 012-2h10"></path>
+      </symbol>
+      <symbol id="icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 14l4-4"></path>
+        <path d="M7.5 16.5l-2 2a3 3 0 104.2 4.2l2-2"></path>
+        <path d="M16.5 7.5l2-2a3 3 0 10-4.2-4.2l-2 2"></path>
+      </symbol>
+      <symbol id="icon-theme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"></path>
+      </symbol>
+    </svg>
+
+    <div class="relative mx-auto max-w-6xl px-5 pb-16 pt-6 sm:px-8">
+      <header>
+        <nav class="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-black/20 bg-black/[0.03] px-4 py-3 backdrop-blur dark:border-white/20 dark:bg-white/5">
+          <a class="text-sm font-semibold tracking-wide" href="https://github.com/Durgesh-Vaigandla/ai-tools-database">AI TOOLS DATABASE</a>
+          <div class="flex items-center gap-2">
+            <a
+              class="inline-flex items-center gap-1 rounded-md border border-black/30 px-3 py-1.5 text-xs font-semibold tracking-wider text-black/90 dark:border-white/30 dark:text-white/90"
+              href="https://github.com/Durgesh-Vaigandla/ai-tools-database/stargazers"
+              aria-label="GitHub stars"
+              ><svg class="h-3.5 w-3.5"><use href="#icon-star"></use></svg><span id="repo-stars-nav">-</span></a
+            >
+            <a
+              class="inline-flex items-center gap-1 rounded-md border border-black/30 px-3 py-1.5 text-xs font-semibold tracking-wider text-black/90 dark:border-white/30 dark:text-white/90"
+              href="https://github.com/Durgesh-Vaigandla/ai-tools-database/pulls"
+              aria-label="Open pull requests"
+              ><svg class="h-3.5 w-3.5"><use href="#icon-pr"></use></svg><span id="repo-prs-nav">-</span></a
+            >
+            <button
+              id="theme-toggle"
+              type="button"
+              class="relative inline-flex h-8 w-24 items-center rounded-full border border-black/40 bg-black/5 px-1 text-[10px] font-semibold uppercase tracking-wider transition dark:border-white/40 dark:bg-white/10"
+              aria-label="Toggle theme"
+              aria-pressed="true"
+            >
+              <span class="pointer-events-none z-10 w-1/2 text-center" id="theme-label-dark">Dark</span>
+              <span class="pointer-events-none z-10 w-1/2 text-center" id="theme-label-light">Light</span>
+              <span
+                id="theme-toggle-knob"
+                class="pointer-events-none absolute left-1 top-1 h-6 w-11 rounded-full bg-black transition-transform duration-200 dark:bg-white"
+              ></span>
+            </button>
+            <a
+              class="rounded-md border border-black/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition hover:bg-black hover:text-white dark:border-white/40 dark:hover:bg-white dark:hover:text-black"
+              href="https://github.com/Durgesh-Vaigandla/ai-tools-database/stargazers"
+              >Star on GitHub</a
+            >
+          </div>
+        </nav>
+
+        <section class="mt-16 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-black/70 dark:text-white/70">Open Source • Developer First</p>
+            <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-6xl">
+              Production-Ready AI Tools
+              <span class="block text-black/70 dark:text-white/70">Dataset + API Feed</span>
+            </h1>
+            <p class="mt-6 max-w-2xl text-base text-black/75 sm:text-lg dark:text-white/75">
+              A dark-mode, developer-focused directory powered by validated JSON. Use it for product discovery,
+              integrations, dashboards, and content workflows.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a
+                class="rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-white/90"
+                href="https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/tools.json"
+                >Open API JSON</a
+              >
+              <a
+                class="rounded-md border border-black/40 px-5 py-2.5 text-sm font-semibold transition hover:bg-black/10 dark:border-white/40 dark:hover:bg-white/10"
+                href="https://github.com/Durgesh-Vaigandla/ai-tools-database"
+                >View Repository</a
+              >
+            </div>
+          </div>
+
+          <div class="grid gap-3 sm:grid-cols-2" aria-live="polite">
+            <article class="rounded-xl border border-black/25 bg-black/[0.03] p-4 shadow-sm dark:border-white/25 dark:bg-white/[0.03]">
+              <p class="inline-flex items-center gap-1 text-xs uppercase tracking-wider text-black/60 dark:text-white/60"><svg class="h-3.5 w-3.5"><use href="#icon-tools"></use></svg>Total Tools</p>
+              <p class="mt-2 text-3xl font-bold" id="total-tools">43</p>
+            </article>
+            <article class="rounded-xl border border-black/25 bg-black/[0.03] p-4 shadow-sm dark:border-white/25 dark:bg-white/[0.03]">
+              <p class="inline-flex items-center gap-1 text-xs uppercase tracking-wider text-black/60 dark:text-white/60"><svg class="h-3.5 w-3.5"><use href="#icon-db"></use></svg>Categories</p>
+              <p class="mt-2 text-3xl font-bold" id="total-categories">12</p>
+            </article>
+            <article class="rounded-xl border border-black/25 bg-black/[0.03] p-4 shadow-sm dark:border-white/25 dark:bg-white/[0.03]">
+              <p class="text-xs uppercase tracking-wider text-black/60 dark:text-white/60">Popular Tools</p>
+              <p class="mt-2 text-3xl font-bold" id="popular-tools">31</p>
+            </article>
+            <article class="rounded-xl border border-black/25 bg-black/[0.03] p-4 shadow-sm dark:border-white/25 dark:bg-white/[0.03]">
+              <p class="inline-flex items-center gap-1 text-xs uppercase tracking-wider text-black/60 dark:text-white/60"><svg class="h-3.5 w-3.5"><use href="#icon-star"></use></svg>GitHub Stars</p>
+              <p class="mt-2 text-3xl font-bold" id="repo-stars">-</p>
+            </article>
+          </div>
+        </section>
+      </header>
+
+      <section class="mt-20 grid gap-4 md:grid-cols-3">
+        <article class="rounded-xl border border-black/20 bg-black/[0.02] p-5 shadow-sm dark:border-white/20 dark:bg-white/[0.02]">
+          <h2 class="inline-flex items-center gap-2 text-lg font-semibold"><svg class="h-5 w-5"><use href="#icon-shield"></use></svg>Schema Validated</h2>
+          <p class="mt-2 text-sm text-black/70 dark:text-white/70">Every entry follows strict validation and integrity checks before merge.</p>
+        </article>
+        <article class="rounded-xl border border-black/20 bg-black/[0.02] p-5 shadow-sm dark:border-white/20 dark:bg-white/[0.02]">
+          <h2 class="inline-flex items-center gap-2 text-lg font-semibold"><svg class="h-5 w-5"><use href="#icon-api"></use></svg>API Friendly</h2>
+          <p class="mt-2 text-sm text-black/70 dark:text-white/70">Direct JSON endpoints for tools, categories, and live stats.</p>
+        </article>
+        <article class="rounded-xl border border-black/20 bg-black/[0.02] p-5 shadow-sm dark:border-white/20 dark:bg-white/[0.02]">
+          <h2 class="inline-flex items-center gap-2 text-lg font-semibold"><svg class="h-5 w-5"><use href="#icon-community"></use></svg>Community Driven</h2>
+          <p class="mt-2 text-sm text-black/70 dark:text-white/70">Open contribution model with automated CI checks and updates.</p>
+        </article>
+      </section>
+
+      <section class="mt-8 grid gap-3 sm:grid-cols-3" aria-live="polite">
+        <article class="rounded-lg border border-black/20 bg-black/[0.02] px-4 py-3 text-sm text-black/75 dark:border-white/20 dark:bg-white/[0.02] dark:text-white/75">
+          <span class="inline-flex items-center gap-1 text-black dark:text-white"><svg class="h-4 w-4"><use href="#icon-star"></use></svg>Stars:</span> <span id="repo-stars-inline" class="font-semibold text-black dark:text-white">-</span>
+        </article>
+        <article class="rounded-lg border border-black/20 bg-black/[0.02] px-4 py-3 text-sm text-black/75 dark:border-white/20 dark:bg-white/[0.02] dark:text-white/75">
+          <span class="inline-flex items-center gap-1 text-black dark:text-white"><svg class="h-4 w-4"><use href="#icon-db"></use></svg>Forks:</span> <span id="repo-forks-inline" class="font-semibold text-black dark:text-white">-</span>
+        </article>
+        <article class="rounded-lg border border-black/20 bg-black/[0.02] px-4 py-3 text-sm text-black/75 dark:border-white/20 dark:bg-white/[0.02] dark:text-white/75">
+          <span class="inline-flex items-center gap-1 text-black dark:text-white"><svg class="h-4 w-4"><use href="#icon-pr"></use></svg>Open PRs:</span> <span id="repo-prs-inline" class="font-semibold text-black dark:text-white">-</span>
+        </article>
+      </section>
+
+      <section class="mt-20">
+        <div class="mb-5 flex items-center justify-between gap-3">
+          <h2 class="text-2xl font-semibold">Developer Console</h2>
+          <p class="text-xs uppercase tracking-wider text-black/50 dark:text-white/50">Live repo + API diagnostics</p>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3">
+          <article class="rounded-xl border border-black/20 bg-black/[0.02] p-5 dark:border-white/20 dark:bg-white/[0.02]">
+            <p class="text-xs uppercase tracking-wider text-black/55 dark:text-white/55">Repository</p>
+            <p class="mt-3 text-sm text-black/75 dark:text-white/75">Forks: <span class="font-semibold text-black dark:text-white" id="repo-forks">-</span></p>
+            <p class="mt-1 text-sm text-black/75 dark:text-white/75">Open Issues: <span class="font-semibold text-black dark:text-white" id="repo-issues">-</span></p>
+            <p class="mt-1 text-sm text-black/75 dark:text-white/75">Open PRs: <span class="font-semibold text-black dark:text-white" id="repo-prs">-</span></p>
+            <p class="mt-1 text-sm text-black/75 dark:text-white/75">Watchers: <span class="font-semibold text-black dark:text-white" id="repo-watchers">-</span></p>
+          </article>
+
+          <article class="rounded-xl border border-black/20 bg-black/[0.02] p-5 dark:border-white/20 dark:bg-white/[0.02]">
+            <p class="text-xs uppercase tracking-wider text-black/55 dark:text-white/55">Data Endpoints</p>
+            <ul class="mt-3 space-y-2 text-sm text-black/75 dark:text-white/75">
+              <li><span class="text-black dark:text-white">Tools:</span> /data/tools.json</li>
+              <li><span class="text-black dark:text-white">Stats:</span> /data/stats.json</li>
+              <li><span class="text-black dark:text-white">Categories:</span> /data/categories.json</li>
+            </ul>
+            <p class="mt-3 text-xs text-black/45 dark:text-white/45">All endpoints are static, cacheable JSON assets.</p>
+          </article>
+
+          <article class="rounded-xl border border-black/20 bg-black/[0.02] p-5 dark:border-white/20 dark:bg-white/[0.02]">
+            <p class="text-xs uppercase tracking-wider text-black/55 dark:text-white/55">Quick Commands</p>
+            <div class="mt-3 space-y-2 text-xs text-black/70 dark:text-white/70">
+              <button class="flex w-full items-center gap-2 rounded border border-black/20 px-3 py-2 text-left hover:bg-black/10 dark:border-white/20 dark:hover:bg-white/10" data-copy="curl -s https://raw.githubusercontent.com/Durgesh-Vaigandla/ai-tools-database/main/data/tools.json | jq '.totalTools'"><svg class="h-4 w-4"><use href="#icon-copy"></use></svg>Copy curl for total tools</button>
+              <button class="flex w-full items-center gap-2 rounded border border-black/20 px-3 py-2 text-left hover:bg-black/10 dark:border-white/20 dark:hover:bg-white/10" data-copy="npm run validate && npm run test"><svg class="h-4 w-4"><use href="#icon-copy"></use></svg>Copy validation pipeline</button>
+              <button class="flex w-full items-center gap-2 rounded border border-black/20 px-3 py-2 text-left hover:bg-black/10 dark:border-white/20 dark:hover:bg-white/10" data-copy="npm run format && npm run stats"><svg class="h-4 w-4"><use href="#icon-copy"></use></svg>Copy regenerate command</button>
+            </div>
+            <p id="copy-feedback" class="mt-2 text-xs text-black/50 dark:text-white/50">Click any command to copy.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-20">
+        <div class="mb-5 flex items-center justify-between gap-3">
+          <h2 class="text-2xl font-semibold">Latest Tools</h2>
+          <a class="text-sm text-black/70 underline underline-offset-4 dark:text-white/70" href="https://github.com/Durgesh-Vaigandla/ai-tools-database/tree/main/data/tools">View category files</a>
+        </div>
+        <div id="latest-tools" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-xl border border-black/20 p-4 text-sm text-black/60 dark:border-white/20 dark:text-white/60">Loading latest tools...</article>
+        </div>
+      </section>
+
+      <section class="mt-20 rounded-xl border border-black/20 bg-black/[0.02] p-6 dark:border-white/20 dark:bg-white/[0.02]">
+        <h2 class="text-xl font-semibold">Top Categories Snapshot</h2>
+        <p id="category-snapshot" class="mt-3 text-sm text-black/70 dark:text-white/70">Development, Design, Content Creation, Business, Productivity, and more.</p>
+        <p class="mt-5 text-xs text-black/50 dark:text-white/50">Last sync: <span id="last-updated">-</span></p>
+      </section>
+
+      <footer class="mt-20 border-t border-black/20 pt-6 text-sm text-black/65 dark:border-white/20 dark:text-white/65">
+        <p>Built with monochrome developer aesthetics. Data is MIT-licensed and community maintained.</p>
+        <p class="mt-2">
+          <a class="underline underline-offset-4" href="https://github.com/Durgesh-Vaigandla/ai-tools-database">GitHub</a>
+          <span class="mx-2">·</span>
+          <a class="underline underline-offset-4" href="https://github.com/Durgesh-Vaigandla/ai-tools-database/issues">Suggest a tool</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

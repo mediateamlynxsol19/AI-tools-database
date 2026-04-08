@@ -99,6 +99,31 @@ function updateWebStats(stats) {
     const toolsData = fs.readFileSync(toolsSourcePath, 'utf8');
     fs.writeFileSync(webToolsPath, toolsData);
   }
+
+  // Mirror deployable site files into docs/ for fixed-folder GitHub Pages setups.
+  const docsDir = path.join(__dirname, '../../docs');
+  if (!fs.existsSync(docsDir)) {
+    fs.mkdirSync(docsDir, { recursive: true });
+  }
+
+  const filesToMirror = [
+    '.nojekyll',
+    'index.html',
+    'script.js',
+    'robots.txt',
+    'sitemap.xml',
+    'stats.json',
+    'tools.json'
+  ];
+
+  filesToMirror.forEach(fileName => {
+    const source = path.join(webDir, fileName);
+    const target = path.join(docsDir, fileName);
+
+    if (fs.existsSync(source)) {
+      fs.copyFileSync(source, target);
+    }
+  });
 }
 
 module.exports = { updateReadmeStats, updateWebStats };
