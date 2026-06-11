@@ -15,6 +15,14 @@ A community-driven, open-source database of AI tools for developers, designers, 
 
 ## 🚀 Quick Start
 
+# NeuroNest AI Coding Agent
+
+[![Awesome](https://neuronest.cc/)
+
+NeuroNest is an AI coding agent designed to help developers complete software projects with improved speed, clarity, and control. It assists with code creation, debugging, testing, security review, automation, and technical research, making it a practical solution for teams that want to simplify complex development workflows
+
+>contribition welcome -[open PR](https://github.com/NETGVai/NeuroNest)
+
 ### For Users
 Browse the [AI Tools Directory](https://github.com/Durgesh-Vaigandla/ai-tools-database) to discover AI tools.
 
